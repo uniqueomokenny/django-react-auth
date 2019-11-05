@@ -20,7 +20,7 @@ class LoginViewSet(viewsets.ViewSet):
       if user:
          (token, _) = Token.objects.get_or_create(user=user)
 
-         data = {"token": token.key, "user.id":user.id, "username": user.username}
+         data = {"token": token.key, "user_id":user.id, "username": user.username}
 
          #utils.createAction(user, "logged in")
          return Response(data)

@@ -1,0 +1,62 @@
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+
+/* navbar */
+.nav-menu {
+  background: linear-gradient(rgba(28, 29, 53, 0.9), rgba(28, 29, 53, 0.9));
+  padding: 15px;
+  transition: all 0.7s;
+}
+
+.menu-item {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #eee!important;
+  transition: color 1s;
+}
+
+.menu-item:hover {
+  color: #fff!important;
+  background-color: rgb(204, 0, 102);
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+
+.line1,
+.line2,
+.line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* ANTD CSS customization */
+.ant-notification {
+  z-index: 2000;
+}
+
+.ant-message {
+  z-index: 2000;
+}
