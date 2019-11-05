@@ -58,7 +58,7 @@ class Login extends Component {
     return (
       <div className="container-fluid">
           <div className="row d-flex justify-content-center">
-            <div className="tutor-form p-5 ">
+            <div className="p-5 ">
             <h3 className="text-muted mb-3">Login</h3>
             {errorMessage}
             <Form onSubmit={this.onSubmitForm} className="login-form">

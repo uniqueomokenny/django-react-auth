@@ -14,7 +14,7 @@ class Navbar extends Component {
 
         return (
             <header>
-                <nav class="navbar navbar-dark bg-primary">
+                <nav className="navbar navbar-dark bg-primary">
                     <div className="container">
                         <Link to={'/'} className="navbar-brand text-uppercase"><span
                             className="h2 font-weight-bold">auth</span><span

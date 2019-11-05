@@ -27,15 +27,7 @@ class Register extends Component {
       }
 
       this.props.registerUser(newUserData, this.props.history)
-      .then(res => {
-        console.log(res.data)
-        this.props.history.push('/login')
-      })
-      // .catch(err => dispatch({
-      //     type: GET_ERRORS,
-      //     payload: err.response.data
-      // }));
-
+      
     });
 
 
@@ -85,7 +77,7 @@ class Register extends Component {
     return (
       <div className="container-fluid">
        <div className="row d-flex justify-content-center">
-          <div className="tutor-form p-5">
+          <div className="p-5">
             <h3 className="text-muted mb-5">Sign up</h3>
             <Form onSubmit={this.onSubmitForm}>
 
